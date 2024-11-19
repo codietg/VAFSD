@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transfor, | transition |animate</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+        }
+        div:hover{
+          /* transform: scale(2); */
+          /* transform: skew(40deg); */
+          transform: rotate(40deg);
+          transition: 2s;
+        }
+        h1{
+            width: 100px;
+            height: 100px;
+            background-color:aquamarine;
+            animation-name: example;
+            animation-duration: 4s;
+
+        }
+        @keyframes example{
+            /* transform: scaleX(1.5); */
+            from{
+                transform: translate(0px,0px);
+                scale: .5;
+                rotate: 0deg;
+            }
+            to{
+                transform: translate(100px,500px);
+                scale: 1.4;
+                rotate: 30deg;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>welcome on my page</h1>
+    <div>
+        
+    </div>
+    
+</body>
+</html>
